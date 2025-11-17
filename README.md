@@ -52,4 +52,33 @@ cd Code-Snippet-Generator
 pip install streamlit ollama pyside6 pyqtdarktheme
 
 
+🚀 Running the Application (Dual Modes)
+Mode 1: Streamlit Web App (URL Access)
+Use this version for easy browser access and creating live demos (must have Ollama running locally).
+
+Bash
+
+streamlit run code_generator_streamlit.py
+The app will automatically open in your browser at the Local URL (e.g., http://localhost:8501).
+
+Mode 2: PySide6 Native Desktop GUI
+Use this version to showcase a professional, responsive desktop application with a native feel.
+
+Bash
+
+python code_generator_pyside_dark.py
+The application window will open directly on your desktop.
+
+📸 Application Walkthrough & Usage
+The core functionality remains the same across both interfaces: select a language and describe the desired function.
+
+Select Language: Choose your desired output language (e.g., Python, JavaScript, SQL).
+
+Describe the Task: Provide a natural language description of the code you need (e.g., "A SQL query to join the 'orders' and 'customers' tables and count daily orders.").
+
+Generate: Click the Generate Code Snippet button.
+
+Result: The application displays the fully generated and runnable code, ready to be copied.
+
+
 
